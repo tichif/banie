@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* font */
+@font-face {
+  font-family: font;
+  src: url('./assets/font/Sofye\ Demo.ttf');
+}
+
+@font-face {
+  font-family: font2;
+  src: url('./assets/font/Love\ Cats\ Italic.otf');
+}
+
+body {
+  background-image: url('./assets/images/valen.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100vh;
+}
+
+.happy {
+  font-family: font;
+  font-size: 90px;
+  letter-spacing: 10px;
+}
+
+.happy:before,
+.happy:after {
+  content: '';
+  background: #000;
+  height: 2px;
+  width: 200px;
+  display: inline-block;
+}
+
+.valentines {
+  font-family: font2;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0 20px;
+  font-size: 50px;
+  color: #fff;
+  text-shadow: 0 0 25px #ff005b;
+  letter-spacing: 3px;
+}
+
+button {
+  letter-spacing: 10px;
+  margin-top: 50px;
+  padding: 20px;
+  border: 2px solid #df4857;
+  border-radius: 10px;
+  color: #86060b;
+  font-size: 20px;
+  cursor: pointer;
+  background: transparent;
+  transition: background 0.5s cubic-bezier(1, 0.04, 0.79, 0.39),
+    color 0.5s cubic-bezier(1, 0.04, 0.79, 0.39);
+}
+
+button:hover {
+  color: #fff;
+  background: #df4857;
+}
+
+button:active {
+  transform: scale(0.89);
+}
+
+/* Gallery page */
+h2 {
+  text-align: center;
+  margin: 20px 0;
+  font-size: 75px;
+  font-family: font;
+  letter-spacing: 5px;
+}
+
+p.gallery-text {
+  text-align: center;
+  margin: 20px 0;
+  font-size: 25px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  margin: 20px auto;
+  padding: 10px 20px;
+}
+
+.gallery div {
+  width: 300px;
+}
+
+.gallery div img {
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.6);
+}
+
+/* Media queries */
+@media (max-width: 768px) {
+  .happy {
+    font-size: 45px;
+  }
+
+  .happy:before,
+  .happy:after {
+    content: '';
+    background: #000;
+    height: 2px;
+    width: 50px;
+    display: inline-block;
+  }
+
+  .valentines {
+    padding: 0 20px;
+    font-size: 25px;
+  }
+
+  /* gallery page */
+  .gallery {
+    grid-template-columns: 1fr;
+  }
+
+  h2,
+  p.gallery-text {
+    color: #fff;
+  }
+
+  .gallery div {
+    width: 325px;
+  }
+}
