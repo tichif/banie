@@ -7,12 +7,12 @@
 /* font */
 @font-face {
   font-family: font;
-  src: url('./assets/font/Sofye\ Demo.ttf');
+  src: url('./assets/font/SofyeDemo.ttf');
 }
 
 @font-face {
   font-family: font2;
-  src: url('./assets/font/Love\ Cats\ Italic.otf');
+  src: url('./assets/font/LoveCatsItalic.otf');
 }
 
 body {
