@@ -6,6 +6,7 @@ import Image5 from '../assets/images/5.jpg';
 import Image6 from '../assets/images/6.jpg';
 import Image7 from '../assets/images/7.jpg';
 import Image8 from '../assets/images/8.jpg';
+import Image9 from '../assets/images/9.jpg';
 
 const Gallery = () => {
   const photos = [
@@ -49,13 +50,18 @@ const Gallery = () => {
       path: Image8,
       alt: 'Banie',
     },
+    {
+      id: 9,
+      path: Image9,
+      alt: 'Banie',
+    },
   ];
 
   return (
     <>
       <h2>Banie</h2>
       <p className='gallery-text'>
-        Explaining my love for you is trying to explain color to a blind person.
+        Love is too weak to define what you are for me.
       </p>
       <div className='gallery'>
         {photos.map((photo) => (
